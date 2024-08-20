@@ -10,12 +10,19 @@ function getHumanChoice(){
     if (choice==1) return "Rock";
     else if (choice==2) return "Paper";
     else if (choice==3) return "Scissors";
+    else {
+        alert("Invalid response. Please try again.")
+        return 0;
+    }
 }
 
 let humanScore = 0, computerScore =0;
 
 function playRound(){
     let humanChoice = getHumanChoice();
+    if (humanChoice==0){
+        return 0;
+    }
     let computerChoice = getComputerChoice();
     console.log('You chose: '+humanChoice);
     console.log("Computer chose: "+computerChoice);
@@ -54,5 +61,5 @@ function playRound(){
 }
 
 for (let i=0; i<5; i++){
-    playRound();
+    if (playRound()==0) i--;
 }
