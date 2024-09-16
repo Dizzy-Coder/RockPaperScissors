@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color:rgb(6, 26, 42);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content{
+    flex: 1;
+}
+.footer{
+    background-color: rgb(17, 39, 60);
+    text-align: center;
+}
+.footer p{
+    color: white;
+}
+h1{
+    color: azure;
+    font-size: 80px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 70px;
+}
+.btn{
+    height: 150px;
+    width: 200px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(125, 196, 232);
+    border: black 3px solid;
+}
+
+button:hover{
+    background-color: aqua;
+    color: rgb(6, 26, 42);
+}
+
+.scores{
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 100px;
+}
+
+span{
+    color: white;
+}
+
+.game{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#q{
+    font-weight: bold;
+}
